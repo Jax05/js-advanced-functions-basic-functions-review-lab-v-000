@@ -10,6 +10,7 @@ let mondayWork = function(activity="go to the office") {
 
 let encouragingPromptFunction = wrapAdjective("!!!")
 // encouragingPromptFunction("cute") => "You are !!!cute!!!!"
+// wrapAdjective("~")("nice") => You are ~nice~!
 
 function wrapAdjective(flair="*") {
   return function(adjective="special") {
