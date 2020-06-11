@@ -8,10 +8,12 @@ let mondayWork = function(activity="go to the office") {
   return `This Monday, I will ${activity}.`
 }
 
+let encouragingPromptFunction = wrapAdjective("!!!")
+
 function wrapAdjective(flair="*") {
   return function(adjective="special") {
     return `You are ${flair}${adjective}${flair}!`
   }
 }
 
-let encouragingPromptFunction = wrapAdjective("!!!")
+// encouragingPromptFunction("cute") => "You are !!!cute!!!!"
